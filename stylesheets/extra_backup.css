@@ -1,0 +1,300 @@
+/* =========================================================
+   본문 텍스트 선택 방지
+   ========================================================= */
+
+.md-content {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+
+/* =========================================================
+   코드 영역은 복사 가능
+   ========================================================= */
+
+.md-content pre,
+.md-content pre code,
+.md-content .highlight {
+    user-select: text;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+}
+
+
+/* =========================================================
+   이미지 드래그 방지
+   ========================================================= */
+
+.md-content img {
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+
+
+/* =========================================================
+   Header
+   ========================================================= */
+
+.md-header {
+    background-color: #1565c0;
+}
+
+.md-header__title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.md-header__topic {
+    color: #ffffff;
+}
+
+/* =========================================================
+   Navigation
+   ========================================================= */
+
+/* 기본 Navigation - Light Mode */
+[data-md-color-scheme="default"] .md-nav__link {
+    color: #333333 !important;
+}
+
+/* 기본 Navigation - Dark Mode */
+[data-md-color-scheme="slate"] .md-nav__link {
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   현재 선택된 메뉴
+   ========================================================= */
+
+/* Light Mode */
+[data-md-color-scheme="default"] .md-nav__link--active {
+    color: #1565c0 !important;
+    font-weight: 700 !important;
+}
+
+/* Dark Mode */
+[data-md-color-scheme="slate"] .md-nav__link--active {
+    color: #1565c0 !important;
+    font-weight: 700 !important;
+}
+
+
+/* =========================================================
+   마우스를 올렸을 때
+   ========================================================= */
+
+.md-nav__link:hover {
+    color: #1565c0 !important;
+}
+
+
+/* =========================================================
+   현재 선택된 메뉴에 마우스를 올렸을 때도 동일한 색상
+   ========================================================= */
+
+.md-nav__link--active:hover {
+    color: #1565c0 !important;
+}
+
+
+/* =========================================================
+   본문 h3 링크
+   예:
+   3-1. Modbus 통신
+   3-2. Camera Calibration
+   3-3. Voice Processing
+   ========================================================= */
+
+   .md-content h3 {
+    line-height: 1.0;
+    margin-top: 0.8em;
+    margin-bottom: 0.4em;
+}
+/* Light Mode */
+[data-md-color-scheme="default"] .md-content h3 a {
+    color: #1565c0 !important;
+    font-weight: 700;
+}
+
+/* Dark Mode */
+[data-md-color-scheme="slate"] .md-content h3 a {
+    color: #1565c0 !important;
+    font-weight: 700;
+}
+
+/* 본문 링크 Hover */
+.md-content h3 a:hover {
+    color: #e65100 !important;
+}
+
+
+/* =========================================================
+   외부 링크
+   ========================================================= */
+
+.external-link {
+    display: inline-block;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.external-link::before {
+    content: "•  ";
+}
+
+
+/* =========================================================
+   들여쓰기
+   ========================================================= */
+
+.indent1 {
+    margin-left: 20px;
+}
+
+.indent2 {
+    margin-left: 40px;
+}
+
+.indent3 {
+    margin-left: 60px;
+}
+
+.indent4 {
+    margin-left: 80px;
+}
+
+
+/* =========================================================
+   큰 제목
+   ========================================================= */
+
+.big-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1976d2;
+    margin-right: 30px;
+}
+
+
+/* =========================================================
+   부제목
+   ========================================================= */
+
+.subtitle {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   Table
+   ========================================================= */
+
+.md-typeset table {
+    border: 2px solid var(--md-default-fg-color--light);
+}
+
+.md-typeset table th,
+.md-typeset table td {
+    border: 1px solid var(--md-default-fg-color--light);
+}
+
+.md-typeset table thead th {
+    text-align: center;
+}
+
+
+/* =========================================================
+   이미지 워터마크
+   ========================================================= */
+
+.watermark-image {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.watermark-image img {
+    display: block;
+}
+
+.watermark-image::after {
+    content: "이  충  현";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%) rotate(-30deg);
+
+    color: rgba(128, 128, 128, 0.08);
+
+    font-size: 70px;
+    font-weight: bold;
+
+    white-space: nowrap;
+
+    pointer-events: none;
+    user-select: none;
+}
+
+
+/* =========================================================
+   본문 글자색
+   ========================================================= */
+
+/* Light Mode */
+[data-md-color-scheme="default"] .md-content {
+    color: #111111 !important;
+}
+
+/* Dark Mode */
+[data-md-color-scheme="slate"] .md-content {
+    color: #F5F5F5 !important;
+}
+
+/* Light Mode */
+[data-md-color-scheme="default"] .md-typeset :not(pre) > code {
+    color: #111111 !important;
+}
+
+/* Dark Mode */
+[data-md-color-scheme="slate"] .md-typeset :not(pre) > code {
+    color: #F5F5F5 !important;
+}
+
+/* 본문 구분선 */
+.md-content hr {
+    border: 0;
+    border-top: 2px solid #1565c0;
+    margin: 20px 0;
+}
+
+.md-content ol > li::marker {
+    font-weight: 700;
+}
+
+.md-content h4 {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-top: 0.35em;
+    margin-bottom: 0.35em;
+}
+
+.md-content h4 a {
+    color: #0066FF !important;
+    font-weight: 700;
+}
+
+.md-content h4 a:hover {
+    color: #E65100 !important;
+}
+
+.case-label {
+    color: #0066FF;
+    font-weight: 800;
+}
