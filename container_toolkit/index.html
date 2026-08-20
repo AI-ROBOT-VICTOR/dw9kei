@@ -19,7 +19,7 @@
         
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../images/robot.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
@@ -105,8 +105,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="두산로보틱스 협동로봇 2 (Tutor 이 충 현)" class="md-header__button md-logo" aria-label="두산로보틱스 협동로봇 2 (Tutor 이 충 현)" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+  <img src="../images/rokey.jpg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -189,8 +188,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="두산로보틱스 협동로봇 2 (Tutor 이 충 현)" class="md-nav__button md-logo" aria-label="두산로보틱스 협동로봇 2 (Tutor 이 충 현)" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+  <img src="../images/rokey.jpg" alt="logo">
 
     </a>
     두산로보틱스 협동로봇 2 (Tutor 이 충 현)
@@ -836,11 +834,14 @@
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/src_cobot2.png" data-desc-position="bottom"><img alt="src\cobot2 디렉토리" src="../images/src_cobot2.png"></a>  </p>
 </li>
 <li>
-<p><strong><code>OPENAI_API_KEY</code>가 들어 있는 <code>.env</code> 복사해두기</strong>  </p>
+<p><strong><code>OPENAI_API_KEY</code>가 들어 있는 <code>.env</code> 복사해두기(어디로 복사해둘까?)</strong>  </p>
 </li>
 <li>
 <p><strong>ROS2 Jazzy에 필요한 의존성 데이터베이스 최신 상태로 갱신 및 자동설치</strong><br>
-    • 최신 상태 갱신    </p>
+    • cobot2_ws로 이동</p>
+<pre><code>cd ~/cobot2_ws
+</code></pre>
+<p>• 최신 상태 갱신    </p>
 <pre><code>rosdep update
 </code></pre>
 <p>• 자동설치</p>

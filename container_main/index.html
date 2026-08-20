@@ -19,7 +19,7 @@
         
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../images/robot.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
@@ -105,8 +105,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="두산로보틱스 협동로봇 2 (Tutor 이 충 현)" class="md-header__button md-logo" aria-label="두산로보틱스 협동로봇 2 (Tutor 이 충 현)" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+  <img src="../images/rokey.jpg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -189,8 +188,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="두산로보틱스 협동로봇 2 (Tutor 이 충 현)" class="md-nav__button md-logo" aria-label="두산로보틱스 협동로봇 2 (Tutor 이 충 현)" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+  <img src="../images/rokey.jpg" alt="logo">
 
     </a>
     두산로보틱스 협동로봇 2 (Tutor 이 충 현)
@@ -561,6 +559,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
+  <a href="#cobot2-core-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cobot2 Core Architecture
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cobot2 Core Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#container-venv-vmvirtual-machine" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -570,8 +580,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#a-dockercomhttpsdocsdockercom" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -581,8 +591,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#b-docker-githubhttpsgithubcomdocker" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -590,6 +600,11 @@
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -884,6 +899,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
+  <a href="#cobot2-core-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cobot2 Core Architecture
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cobot2 Core Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#container-venv-vmvirtual-machine" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -893,8 +920,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#a-dockercomhttpsdocsdockercom" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -904,8 +931,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#b-docker-githubhttpsgithubcomdocker" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -913,6 +940,11 @@
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -934,16 +966,18 @@
 
 
 <h1 id="container"><strong>Container 구축</strong></h1>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/docker_vm.png" data-desc-position="bottom"><img alt="alt text" src="../images/docker_vm.png"></a></p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/container_registry.png" data-desc-position="bottom"><img alt="alt text" src="../images/container_registry.png"></a></p>
+<h2 id="cobot2-core-architecture"><strong>Cobot2 Core Architecture</strong></h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/container_od.jpg" data-desc-position="bottom"><img alt="alt text" src="../images/container_od.jpg" width="600"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/docker_vm.png" data-desc-position="bottom"><img alt="alt text" src="../images/docker_vm.png" width="600"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/container_registry.png" data-desc-position="bottom"><img alt="alt text" src="../images/container_registry.png" width="600"></a></p>
 <h3 id="container-venv-vmvirtual-machine"><strong>Container, Venv, VM(Virtual Machine)</strong></h3>
 <table>
 <thead>
 <tr>
-<th style="text-align: center;">구분</th>
-<th style="text-align: center;">venv</th>
-<th style="text-align: center;">Docker</th>
-<th style="text-align: center;">Virtual Machine</th>
+<th style="text-align: center;"><strong>구분</strong></th>
+<th style="text-align: center;"><strong>venv</strong></th>
+<th style="text-align: center;"><strong>Docker</strong></th>
+<th style="text-align: center;"><strong>Virtual Machine</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -1027,10 +1061,15 @@
 </tr>
 </tbody>
 </table>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/ros2_communication.jpg" data-desc-position="bottom"><img alt="alt text" src="../images/ros2_communication.jpg"></a></p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/docker.jpg" data-desc-position="bottom"><img alt="alt text" src="../images/docker.jpg"></a></p>
-<h3 id="a-dockercomhttpsdocsdockercom"><a href="https://docs.docker.com"> A. Docker.com(https://docs.docker.com)</a></h3>
-<h3 id="b-docker-githubhttpsgithubcomdocker"><a href="https://github.com/docker"> B. Docker Github(https://github.com/docker)</a></h3>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/ros2_communication.jpg" data-desc-position="bottom"><img alt="ROS2 Communication" src="../images/ros2_communication.jpg" width="500"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/docker.jpg" data-desc-position="bottom"><img alt="alt text" src="../images/docker.jpg" width="500"></a></p>
+<h3 id="a-dockercomhttpsdocsdockercom"><a href="https://docs.docker.com" target="_blank" rel="noopener noreferrer">A. Docker.com(https://docs.docker.com)</a></h3>
+<h3 id="b-docker-githubhttpsgithubcomdocker"><a href="https://github.com/docker" target="_blank" rel="noopener noreferrer">B. Docker Github(https://github.com/docker)</a></h3>
+<!--
+###[ A. Docker.com(https://docs.docker.com)](https://docs.docker.com)
+
+###[ B. Docker Github(https://github.com/docker)](https://github.com/docker)
+-->
 
 
 

@@ -211,12 +211,26 @@
 .md-typeset table th,
 .md-typeset table td {
     border: 1px solid var(--md-default-fg-color--light);
+    padding: 0.3em 0.8em;
+    line-height: 0.9;
 }
 
+/* 표 헤더 */
 .md-typeset table thead th {
     text-align: center;
+    font-size: 1.4em;
+    font-weight: 700;
 }
 
+/* 표 본문 */
+.md-typeset table tbody td {
+    font-size: 1.1em;
+}
+
+.md-typeset table th:first-child,
+.md-typeset table td:first-child {
+    font-weight: 700;
+}
 
 /* =========================================================
    이미지 워터마크
