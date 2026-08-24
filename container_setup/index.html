@@ -534,7 +534,7 @@
   <span class="md-ellipsis">
     
   
-    4-1. Container Toolkit
+    4-1. NVIDIA Toolkit
   
 
     
@@ -822,7 +822,11 @@
 
 <h1 id="container-setup"><strong>Container 내부 환경 Setup</strong></h1>
 <ol>
-<li><strong>yolo를 이용해서 학습시킬 경우 Container 내부에서 진행하기 위해 yolo_train 디렉토리 생성</strong> </li>
+<li>
+<p><strong>yolo를 이용해서 학습시킬 경우 Container 내부에서 진행하기 위해 yolo_train 디렉토리 생성</strong>  </p>
+<pre><code>mkdir -p ~/yolo_train
+</code></pre>
+</li>
 <li>
 <p><strong>cobot2.zip 다운로드 후 아래와 같이 압축풀고 디렉토리 구조 만들기</strong>  </p>
 <pre><code>docker run -d --name yolo-detection -w /ws \
