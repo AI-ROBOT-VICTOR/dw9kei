@@ -915,15 +915,15 @@ python3 -c "import numpy; assert numpy.__version__.startswith('1.'), numpy.__ver
 </code></pre>
 </li>
 <li>
-<p><strong>ROS2 의존성 자동설치</strong><br>
-    • Ultralytics와 Numpy 제외<br>
-        cd ~/ros2_ws
-        rosdep init 2&gt;/dev/null || true; rosdep update
-        source /opt/ros/$ROS_DISTRO/setup.bash
-        rosdep install --from-paths src --ignore-src --rosdistro "$ROS_DISTRO" -y --skip-keys "ultralytics numpy"
-        colcon build --merge-install
-        source install/setup.bash
-        ros2 run object_detection object_detection</p>
+<p><strong>ROS2 의존성 자동설치(Ultralytics와 Numpy 제외)</strong>  </p>
+<pre><code>cd ~/ros2_ws  
+rosdep init 2&gt;/dev/null || true; rosdep update  
+source /opt/ros/$ROS_DISTRO/setup.bash  
+rosdep install --from-paths src --ignore-src --rosdistro "$ROS_DISTRO" -y --skip-keys "ultralytics numpy"
+colcon build --merge-install
+source install/setup.bash
+ros2 run object_detection object_detection
+</code></pre>
 </li>
 <li>
 <p><strong>Yolo-detection Container 검증</strong>    </p>

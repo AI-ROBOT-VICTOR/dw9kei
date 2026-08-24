@@ -911,7 +911,7 @@
 <p>• Docker 재시작</p>
 <pre><code>sudo systemctl restart docker
 </code></pre>
-<p>• GPU가 정상적으로 인식되는지 검증(GPU Driver등 Table 표시되면 정상)</p>
+<p>• ros:jazzy image 다운로드 및 GPU 정상 인식 확인(GPU Driver, CUDA 등 Version 표시되면 정상)</p>
 <pre><code>docker run --rm --gpus all ros:jazzy-ros-base-noble nvidia-smi
 </code></pre>
 </li>
