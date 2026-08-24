@@ -7,13 +7,13 @@
         <meta name="author" content="이충현">
       
       
-        <link rel="canonical" href="https://ai-robot-victor.github.io/dw9kei/pickandplace_main/">
+        <link rel="canonical" href="https://ai-robot-victor.github.io/dw9kei/container_yolo_train/">
       
       
-        <link rel="prev" href="../container_yolo_train/">
+        <link rel="prev" href="../container_setup/">
       
       
-        <link rel="next" href="../pickandplacetxt/">
+        <link rel="next" href="../pickandplace_main/">
       
       
         
@@ -24,7 +24,7 @@
     
     
       
-        <title>Pick and Place 구조 - 두산로보틱스 협동로봇 2 (Tutor 이 충 현)</title>
+        <title>4-3. Yolo Train - 두산로보틱스 협동로봇 2 (Tutor 이 충 현)</title>
       
     
     
@@ -87,7 +87,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pick-and-place" class="md-skip">
+        <a href="#container-yolo-train" class="md-skip">
           Skip to content
         </a>
       
@@ -122,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Pick and Place 구조
+              4-3. Yolo Train
             
           </span>
         </div>
@@ -447,18 +447,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked="">
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -479,7 +481,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -578,10 +580,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../container_yolo_train/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -597,6 +608,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -613,20 +625,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked="">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6">
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -647,7 +657,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -662,37 +672,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Pick and Place 구조
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../pickandplace_main/" class="md-nav__link">
         
   
   
@@ -708,59 +691,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#vlaphysical-ai-pipeline-sample" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        VLA/Physical AI Pipeline Sample
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#system-architecture" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        System Architecture
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-machanism-and-process" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        협동로봇 2 Machanism and Process
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -903,47 +833,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#vlaphysical-ai-pipeline-sample" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        VLA/Physical AI Pipeline Sample
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#system-architecture" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        System Architecture
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-machanism-and-process" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        협동로봇 2 Machanism and Process
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -959,26 +848,30 @@
 
 
 
-<h1 id="pick-and-place"><strong>Pick and Place 실행</strong></h1>
-<h4 id="vlaphysical-ai-pipeline-sample">VLA/Physical AI Pipeline Sample</h4>
-<p><strong>1) Natural Language(LLM) ➜ 2)Semantic Parsing ➜ 3)Scene Understanding ➜ 4)Task Planning ➜ 5)Robot Execution</strong></p>
-<p><strong>음성 명령 : 빨간색 물체를 잡아서 오른쪽에 놓아줘</strong>  </p>
-<pre><code class="language-json">{
-  "action": "pick_and_place",
-  "object": {
-    "color": "red",
-    "type": "object"
-  },
-  "target": {
-    "position": "right"
-  }
-}
+<h1 id="container-yolo-train"><strong>Container에서 Yolo Train 및 모델 만들기</strong></h1>
+<ol>
+<li>
+<p><strong>Container 내부에서</strong>  </p>
+<pre><code>mkdir -p ~/corecode/yolo_train
 </code></pre>
-<h4 id="system-architecture">System Architecture</h4>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/container_hierarchy.jpg" data-desc-position="bottom"><img alt="alt text" src="../images/container_hierarchy.jpg"></a></p>
-<hr>
-<h4 id="2-machanism-and-process">협동로봇 2 Machanism and Process</h4>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/pipeline.jpg" data-desc-position="bottom"><img alt="alt text" src="../images/pipeline.jpg"></a></p>
+</li>
+<li>
+<p><strong>corecode/yolo_train안에 Fruits등 train할 디렉토리 생성</strong>  </p>
+</li>
+<li>
+<p><strong>cobot2.zip 다운로드 후 아래와 같이 압축풀고 디렉토리 구조 만들기</strong>  </p>
+<pre><code>docker run -d --name yolo-detection -w /ros2_ws \
+--network host --gpus all --shm-size=8g \
+-e ROS_DISTRO=jazzy -e RMW_IMPLEMENTATION=rmw_cyclonedds_cpp \
+-e ROS_DOMAIN_ID=${ROS_DOMAIN_ID:-0} -e CYCLONEDDS_URI=file:///cyclonedds.xml \
+-e PYTHONUNBUFFERED=1 \
+-v ~/.config/cyclonedds/cyclonedds.xml:/cyclonedds.xml:ro \
+-v ~/cobot2_ws/src/cobot2/yolo_container:/ros2_ws/src \
+-v ~/corecode/yolo_train:/yolo_train \
+ros:jazzy-ros-base-noble sleep infinity
+</code></pre>
+</li>
+</ol>
 
 
 
