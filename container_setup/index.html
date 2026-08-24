@@ -823,20 +823,23 @@
 <h1 id="container-setup"><strong>Container 내부 환경 Setup</strong></h1>
 <ol>
 <li>
-<p><strong>yolo를 이용해서 학습시킬 경우 Container 내부에서 진행하기 위해 yolo_train 디렉토리 생성</strong>  </p>
-<pre><code>mkdir -p ~/yolo_train
+<p><strong>yolo를 이용해서 학습시킬 경우 Container 내부에서 진행하기 위해 호스트에서 yolo_train 디렉토리 생성</strong>  </p>
+<pre><code>mkdir -p ~/corecode/yolo_train
 </code></pre>
 </li>
 <li>
+<p><strong>corecode/yolo_train안에 Fruits등 train할 디렉토리 생성</strong>  </p>
+</li>
+<li>
 <p><strong>cobot2.zip 다운로드 후 아래와 같이 압축풀고 디렉토리 구조 만들기</strong>  </p>
-<pre><code>docker run -d --name yolo-detection -w /ws \
+<pre><code>docker run -d --name yolo-detection -w /ros2_ws \
 --network host --gpus all --shm-size=8g \
 -e ROS_DISTRO=jazzy -e RMW_IMPLEMENTATION=rmw_cyclonedds_cpp \
 -e ROS_DOMAIN_ID=${ROS_DOMAIN_ID:-0} -e CYCLONEDDS_URI=file:///cyclonedds.xml \
 -e PYTHONUNBUFFERED=1 \
 -v ~/.config/cyclonedds/cyclonedds.xml:/cyclonedds.xml:ro \
 -v ~/cobot2_ws/src/cobot2/yolo_container:/ros2_ws/src \
--v ~/corecode/yolo_train:/train \
+-v ~/corecode/yolo_train:/yolo_train \
 ros:jazzy-ros-base-noble sleep infinity
 </code></pre>
 </li>
