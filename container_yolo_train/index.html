@@ -703,34 +703,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../pickandplacetxt/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    5-1. Pick and Place Text
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../pickandplacevoice/" class="md-nav__link">
         
   
@@ -738,7 +710,7 @@
   <span class="md-ellipsis">
     
   
-    5-2. Pick and Place Voice
+    Pick and Place Voice
   
 
     
@@ -851,25 +823,20 @@
 <h1 id="container-yolo-train"><strong>Container에서 Yolo Train 및 모델 만들기</strong></h1>
 <ol>
 <li>
-<p><strong>Container 내부에서</strong>  </p>
-<pre><code>mkdir -p ~/corecode/yolo_train
+<p><strong>Container 내부에서</strong><br>
+   •  yolo_train 이동  </p>
+<pre><code>cd /yolo_train
+</code></pre>
+<p>• ros2_ws 이동  </p>
+<pre><code>cd /ros2_ws
 </code></pre>
 </li>
 <li>
-<p><strong>corecode/yolo_train안에 Fruits등 train할 디렉토리 생성</strong>  </p>
+<p><strong>corecode/yolo_train안에 Fruits등 train할 디렉토리 생성</strong>     </p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/Fruits.png" data-desc-position="bottom"><img alt="alt text" src="../images/Fruits.png"></a></p>
 </li>
 <li>
-<p><strong>cobot2.zip 다운로드 후 아래와 같이 압축풀고 디렉토리 구조 만들기</strong>  </p>
-<pre><code>docker run -d --name yolo-detection -w /ros2_ws \
---network host --gpus all --shm-size=8g \
--e ROS_DISTRO=jazzy -e RMW_IMPLEMENTATION=rmw_cyclonedds_cpp \
--e ROS_DOMAIN_ID=${ROS_DOMAIN_ID:-0} -e CYCLONEDDS_URI=file:///cyclonedds.xml \
--e PYTHONUNBUFFERED=1 \
--v ~/.config/cyclonedds/cyclonedds.xml:/cyclonedds.xml:ro \
--v ~/cobot2_ws/src/cobot2/yolo_container:/ros2_ws/src \
--v ~/corecode/yolo_train:/yolo_train \
-ros:jazzy-ros-base-noble sleep infinity
-</code></pre>
+<p><strong>yolo_train.py 학습 실행</strong>  </p>
 </li>
 </ol>
 
