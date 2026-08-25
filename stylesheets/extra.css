@@ -343,7 +343,7 @@
    ========================================================= */
 
 .case-label {
-    color: #0066FF;
+    color: #0a66c2;
     font-weight: 800;
 }
 
@@ -351,4 +351,13 @@
     border: 1px solid #999999;
     border-radius: 2px;
     box-sizing: border-box;
+}
+
+.path-highlight {
+    color: #0a66c2;
+    font-weight: 700;
+}
+
+.md-typeset pre code {
+    font-weight: 500;
 }

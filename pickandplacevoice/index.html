@@ -842,6 +842,9 @@
     • yolo-detection Container로 들어가기  </p>
 <pre><code>docker exec -it yolo-detection bash
 </code></pre>
+<p>• 컨테이너의 .bashrc에 추가하기  </p>
+<pre><code>echo 'source /opt/ros/jazzy/setup.bash' &gt;&gt; ~/.bashrc
+</code></pre>
 <p>• source 하기(ROS2 Jazzy Underlay, Overlay)  </p>
 <pre><code>source /opt/ros/$ROS_DISTRO/setup.bash &amp;&amp; source /ws/install/setup.bash
 </code></pre>

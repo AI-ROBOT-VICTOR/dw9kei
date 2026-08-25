@@ -823,20 +823,30 @@
 <h1 id="container-yolo-train"><strong>Container에서 Yolo Train 및 모델 만들기</strong></h1>
 <ol>
 <li>
+<p><strong>Host에서 아래 명령어 실행</strong>  </p>
+<pre><code>xhost +local:docker
+</code></pre>
+</li>
+<li>
+<p><strong>Host에서 <span class="path-highlight">Home / corecode / yolo_train / Fruits</span> 디렉토리 생성</strong>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/yolo_train.png" data-desc-position="bottom"><img alt="alt text" class="image-border" src="../images/yolo_train.png"></a></p>
+</li>
+<li>
 <p><strong>Container 내부에서</strong><br>
    •  yolo_train 이동  </p>
 <pre><code>cd /yolo_train
 </code></pre>
-<p>• ros2_ws 이동  </p>
-<pre><code>cd /ros2_ws
-</code></pre>
 </li>
 <li>
-<p><strong>corecode/yolo_train안에 Fruits등 train할 디렉토리 생성</strong>     </p>
+<p><strong>yolo_train.py 실행</strong>     </p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/Fruits.png" data-desc-position="bottom"><img alt="alt text" src="../images/Fruits.png"></a></p>
 </li>
 <li>
-<p><strong>yolo_train.py 학습 실행</strong>  </p>
+<p><strong>best.pt를 찾아서 옮기고</strong></p>
+</li>
+<li>
+<p><strong>yolo_predict_camera.py 실행</strong>  </p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/yolo_fruits.jpg" data-desc-position="bottom"><img alt="alt text" src="../images/yolo_fruits.jpg"></a></p>
 </li>
 </ol>
 

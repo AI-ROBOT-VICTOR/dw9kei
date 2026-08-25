@@ -807,6 +807,11 @@
 <h1 id="container-setup"><strong>Container 내부 환경 Setup</strong></h1>
 <ol>
 <li>
+<p><strong>호스트에서 아래 명령 실행</strong></p>
+<pre><code>xhost +local:docker
+</code></pre>
+</li>
+<li>
 <p><strong>Container 내부에서 yolo 학습 및 모델 만들기 위해 호스트에서 yolo_train 디렉토리 생성</strong>  </p>
 <pre><code>mkdir -p ~/corecode/yolo_train
 </code></pre>
