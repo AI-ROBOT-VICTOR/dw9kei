@@ -899,6 +899,7 @@ python3 -c "import numpy; assert numpy.__version__.startswith('1.'), numpy.__ver
     • Ultralytics와 Numpy 제외<br>
     • object_detection Node는 Ctrl+C로 종료  </p>
 <pre><code>rosdep init 2&gt;/dev/null || true; rosdep update  
+echo 'source /opt/ros/jazzy/setup.bash' &gt;&gt; ~/.bashrc
 source /opt/ros/$ROS_DISTRO/setup.bash  
 rosdep install --from-paths src --ignore-src --rosdistro "$ROS_DISTRO" -y --skip-keys "ultralytics numpy"
 colcon build --merge-install
