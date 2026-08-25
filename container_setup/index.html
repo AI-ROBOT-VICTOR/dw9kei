@@ -834,6 +834,7 @@
 <p><strong>cobot2.zip 다운로드 후 아래와 같이 압축풀고 디렉토리 구조 만들기</strong>  </p>
 <pre><code>docker run -d --name yolo-detection -w /ros2_ws \
 --network host --gpus all --shm-size=8g \
+--device=/dev/video6:/dev/video6 \
 -e ROS_DISTRO=jazzy -e RMW_IMPLEMENTATION=rmw_cyclonedds_cpp \
 -e ROS_DOMAIN_ID=${ROS_DOMAIN_ID:-0} -e CYCLONEDDS_URI=file:///cyclonedds.xml \
 -e PYTHONUNBUFFERED=1 \
