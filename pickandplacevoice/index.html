@@ -848,6 +848,9 @@
 <p>• source 하기(ROS2 Jazzy Underlay, Overlay)  </p>
 <pre><code>source /opt/ros/$ROS_DISTRO/setup.bash &amp;&amp; source /ws/install/setup.bash
 </code></pre>
+<p>• build 후 사용가능한 package list 확인  </p>
+<pre><code>ros2 pkg list | grep -E "object_detection|od_msg"
+</code></pre>
 <p>• yolo-detection Node 실행</p>
 <pre><code>ros2 run object_detection object_detection
 </code></pre>
