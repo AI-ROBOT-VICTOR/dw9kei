@@ -823,6 +823,12 @@
 <h1 id="container-setup"><strong>Container 내부 환경 Setup</strong></h1>
 <ol>
 <li>
+<p><strong>Host에서 <span class="path-highlight">Home / corecode / yolo_train</span> 디렉토리 생성</strong></p>
+<pre><code>mkdir -p ~/corecode/yolo_train
+</code></pre>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/yolo_train.png" data-desc-position="bottom"><img alt="alt text" class="image-border" src="../images/yolo_train.png"></a></p>
+</li>
+<li>
 <p><strong>docker run으로 컨테이너 생성 + start</strong>  </p>
 <pre><code>docker run -d --name yolo-detection -w /ros2_ws \
 --network host --gpus all --shm-size=8g \
