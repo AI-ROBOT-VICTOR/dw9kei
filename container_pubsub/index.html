@@ -24,7 +24,7 @@
     
     
       
-        <title>4-4. Subscriber - 두산로보틱스 협동로봇 2 (Tutor 이 충 현)</title>
+        <title>4-4. Subscriber - 두산로보틱스 협동로봇 2 (Tutor 이충현)</title>
       
     
     
@@ -87,7 +87,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#container-subscriber-package" class="md-skip">
+        <a href="#realsense-rgb-depth-topic-subscribing" class="md-skip">
           Skip to content
         </a>
       
@@ -103,7 +103,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="두산로보틱스 협동로봇 2 (Tutor 이 충 현)" class="md-header__button md-logo" aria-label="두산로보틱스 협동로봇 2 (Tutor 이 충 현)" data-md-component="logo">
+    <a href=".." title="두산로보틱스 협동로봇 2 (Tutor 이충현)" class="md-header__button md-logo" aria-label="두산로보틱스 협동로봇 2 (Tutor 이충현)" data-md-component="logo">
       
   <img src="../images/rokey.jpg" alt="logo">
 
@@ -116,7 +116,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            두산로보틱스 협동로봇 2 (Tutor 이 충 현)
+            두산로보틱스 협동로봇 2 (Tutor 이충현)
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -186,12 +186,12 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="두산로보틱스 협동로봇 2 (Tutor 이 충 현)" class="md-nav__button md-logo" aria-label="두산로보틱스 협동로봇 2 (Tutor 이 충 현)" data-md-component="logo">
+    <a href=".." title="두산로보틱스 협동로봇 2 (Tutor 이충현)" class="md-nav__button md-logo" aria-label="두산로보틱스 협동로봇 2 (Tutor 이충현)" data-md-component="logo">
       
   <img src="../images/rokey.jpg" alt="logo">
 
     </a>
-    두산로보틱스 협동로봇 2 (Tutor 이 충 현)
+    두산로보틱스 협동로봇 2 (Tutor 이충현)
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix="">
@@ -848,12 +848,15 @@
 
 
 
-<h1 id="container-subscriber-package"><strong>Container에서 subscriber package 만들기</strong></h1>
+<h1 id="realsense-rgb-depth-topic-subscribing"><strong>realsense RGB와 Depth Topic Subscribing</strong></h1>
 <ol>
 <li>
 <p><strong>Host에서 realsense subscriber package 만들기</strong>  </p>
-<pre><code>realsense
+<pre><code>ros2 pkg create --build-type ament_python realsense_subscriber
 </code></pre>
+</li>
+<li>
+<p><strong>setup.py 등 수정</strong>  </p>
 </li>
 <li>
 <p><strong>실행되어 있는 Container 접속</strong>  </p>
@@ -862,22 +865,28 @@
 </li>
 <li>
 <p><strong>Container 내부에서</strong><br>
-   •  yolo_train 이동  </p>
-<pre><code>cd /yolo_train
+   •  ros2_ws로 이동  </p>
+<pre><code>cd /ros2_ws
 </code></pre>
 </li>
 <li>
-<p><strong>yolo_train.py 실행</strong>     </p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/Fruits.png" data-desc-position="bottom"><img alt="alt text" src="../images/Fruits.png"></a></p>
+<p><strong>build 후 source</strong>     </p>
 </li>
 <li>
-<p><strong>best.pt를 찾아서 옮기고</strong></p>
-</li>
-<li>
-<p><strong>yolo_predict_camera.py 실행</strong>  </p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/yolo_fruits.jpg" data-desc-position="bottom"><img alt="alt text" src="../images/yolo_fruits.jpg"></a></p>
+<p><strong>realsense subscriber Node 실행</strong><br>
+    •  subscriber_txt 실행  </p>
+<pre><code>ros2 run realsense_subscriber subscriber_txt
+</code></pre>
+<p>•  subscriber_img 실행  </p>
+<pre><code>ros2 run realsense_subscriber subscriber_img
+</code></pre>
 </li>
 </ol>
+<div class="indent-image">
+
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/realsense_pubsub.png" data-desc-position="bottom"><img src="../images/realsense_pubsub.png" class="image-border"></a>
+
+</div>
 
 
 

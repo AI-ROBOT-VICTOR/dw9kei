@@ -73,13 +73,13 @@
 
 /* Light Mode */
 [data-md-color-scheme="default"] .md-nav__link--active {
-    color: #0a66c2 !important;
+    color: #0066FF !important;
     font-weight: 700 !important;
 }
 
 /* Dark Mode */
 [data-md-color-scheme="slate"] .md-nav__link--active {
-    color: #0a66c2 !important;
+    color: #0066FF !important;
     font-weight: 700 !important;
 }
 
@@ -89,9 +89,8 @@
    ========================================================= */
 
 .md-nav__link:hover {
-    color: #0a66c2 !important;
+    color: #0066FF !important;
 }
-
 
 /* =========================================================
    현재 선택된 메뉴에 마우스를 올렸을 때도 동일한 색상
@@ -100,7 +99,6 @@
 .md-nav__link--active:hover {
     color: #0a66c2 !important;
 }
-
 
 /* =========================================================
    본문 링크
@@ -111,7 +109,6 @@
     color: #0066FF !important;
 }
 
-
 /* =========================================================
    본문 링크 Hover
    ========================================================= */
@@ -120,18 +117,69 @@
     color: #00A8FF !important;
 }
 
+/* =========================================================
+   본문 H1
+   ========================================================= */
+
+/* Light Mode */
+[data-md-color-scheme="default"] .md-content h1 {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: #222222 !important;
+}
+
+/* Dark Mode */
+[data-md-color-scheme="slate"] .md-content h1 {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: #F5F5F5 !important;
+}
 
 /* =========================================================
-   본문 h3
+   본문 H2
+   ========================================================= */
+
+/* Light Mode */
+[data-md-color-scheme="default"] .md-content h2 {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #222222 !important;
+    margin-top: 1.0em;
+    margin-bottom: 0.5em;
+}
+
+/* Dark Mode */
+[data-md-color-scheme="slate"] .md-content h2 {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #F5F5F5 !important;
+    margin-top: 1.0em;
+    margin-bottom: 0.5em;
+}
+
+/* =========================================================
+   본문 H3
    ========================================================= */
 
 .md-content h3 {
-    line-height: 1.0;
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 1.2;
     margin-top: 0.8em;
     margin-bottom: 0.4em;
 }
 
-/* h3 링크 */
+/* Light Mode */
+[data-md-color-scheme="default"] .md-content h3 {
+    color: #222222 !important;
+}
+
+/* Dark Mode */
+[data-md-color-scheme="slate"] .md-content h3 {
+    color: #F5F5F5 !important;
+}
+
+/* H3 링크 */
 .md-content h3 a {
     color: #0066FF !important;
     font-weight: 700;
@@ -141,6 +189,38 @@
     color: #00A8FF !important;
 }
 
+/* =========================================================
+   본문 H4
+   ========================================================= */
+
+.md-content h4 {
+    font-size: 1.0em;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-top: 0.35em;
+    margin-bottom: 0.35em;
+}
+
+/* Light Mode */
+[data-md-color-scheme="default"] .md-content h4 {
+    color: #222222 !important;
+}
+
+/* Dark Mode */
+[data-md-color-scheme="slate"] .md-content h4 {
+    color: #F5F5F5 !important;
+}
+
+
+/* H4 링크 */
+.md-content h4 a {
+    color: #0066FF !important;
+    font-weight: 700;
+}
+
+.md-content h4 a:hover {
+    color: #00A8FF !important;
+}
 
 /* =========================================================
    외부 링크
@@ -155,7 +235,6 @@
 .external-link::before {
     content: "•  ";
 }
-
 
 /* =========================================================
    들여쓰기
@@ -177,7 +256,6 @@
     margin-left: 80px;
 }
 
-
 /* =========================================================
    큰 제목
    ========================================================= */
@@ -189,7 +267,6 @@
     margin-right: 30px;
 }
 
-
 /* =========================================================
    부제목
    ========================================================= */
@@ -198,7 +275,6 @@
     font-size: 20px;
     color: #ffffff;
 }
-
 
 /* =========================================================
    Table
@@ -227,6 +303,7 @@
     font-size: 1.1em;
 }
 
+/* 표 첫 번째 열 Bold */
 .md-typeset table th:first-child,
 .md-typeset table td:first-child {
     font-weight: 700;
@@ -266,7 +343,6 @@
     user-select: none;
 }
 
-
 /* =========================================================
    본문 글자색
    ========================================================= */
@@ -280,7 +356,6 @@
 [data-md-color-scheme="slate"] .md-content {
     color: #F5F5F5 !important;
 }
-
 
 /* =========================================================
    Inline Code
@@ -296,7 +371,6 @@
     color: #F5F5F5 !important;
 }
 
-
 /* =========================================================
    본문 구분선
    ========================================================= */
@@ -307,7 +381,6 @@
     margin: 20px 0;
 }
 
-
 /* =========================================================
    Ordered List
    ========================================================= */
@@ -316,36 +389,18 @@
     font-weight: 700;
 }
 
-
-/* =========================================================
-   본문 h4
-   ========================================================= */
-
-.md-content h4 {
-    font-size: 1em;
-    line-height: 1.5;
-    margin-top: 0.35em;
-    margin-bottom: 0.35em;
-}
-
-.md-content h4 a {
-    color: #0066FF !important;
-    font-weight: 700;
-}
-
-.md-content h4 a:hover {
-    color: #00A8FF !important;
-}
-
-
 /* =========================================================
    Case Label
    ========================================================= */
 
 .case-label {
-    color: #0a66c2;
+    color: #0066FF;
     font-weight: 800;
 }
+
+/* =========================================================
+   이미지 테두리
+   ========================================================= */
 
 .image-border {
     border: 1px solid #999999;
@@ -353,11 +408,28 @@
     box-sizing: border-box;
 }
 
+/* =========================================================
+   경로 강조
+   ========================================================= */
+
 .path-highlight {
-    color: #0a66c2;
+    color: #0066FF;
     font-weight: 700;
 }
+
+/* =========================================================
+   코드 글자
+   ========================================================= */
 
 .md-typeset pre code {
     font-weight: 500;
 }
+
+/* =========================================================
+   들여쓰기 이미지
+   ========================================================= */
+
+.indent-image {
+    margin-left: 33px;
+}
+
