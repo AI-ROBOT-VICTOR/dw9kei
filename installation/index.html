@@ -869,10 +869,8 @@
 </ul>
 </li>
 <li>
-<p><strong>.bashrc 아래 쪽에 추가</strong></p>
-</li>
-</ol>
-<pre><code class="language-bash">source /opt/ros/jazzy/setup.bash
+<p><strong>.bashrc 아래 쪽에 추가</strong>  </p>
+<pre><code>source /opt/ros/jazzy/setup.bash
 source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
 export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 export CYCLONEDDS_URI="file://$HOME/.config/cyclonedds/cyclonedds.xml"
@@ -883,13 +881,27 @@ alias s="source ~/cobot2_ws/install/setup.bash; echo \"source ~/cobot2_ws/instal
 
 alias roboton="ros2 launch m0609_rg2_bringup bringup.launch.py mode:=real host:=192.168.1.100"
 alias realsense="ros2 run realsense2_camera realsense2_camera_node --ros-args \
-  -r __ns:=/ -r __node:=camera \
-  -p enable_color:=true -p enable_depth:=true \
-  -p depth_module.depth_profile:=848x480x30 -p rgb_camera.color_profile:=1280x720x30 \
-  -p align_depth.enable:=true -p enable_rgbd:=true -p enable_sync:=true \
-  -p pointcloud.enable:=true -p pointcloud.stream_filter:=2 \
-  -p enable_accel:=false -p enable_gyro:=false -p initial_reset:=true"
+-r __ns:=/ -r __node:=camera \
+-p enable_color:=true -p enable_depth:=true \
+-p depth_module.depth_profile:=848x480x30 -p rgb_camera.color_profile:=1280x720x30 \
+-p align_depth.enable:=true -p enable_rgbd:=true -p enable_sync:=true \
+-p pointcloud.enable:=true -p pointcloud.stream_filter:=2 \
+-p enable_accel:=false -p enable_gyro:=false -p initial_reset:=true"
 </code></pre>
+</li>
+<li>
+<p><strong>.bashrc에 ROS_DOMAIN_ID등 필요시 수정</strong>  </p>
+</li>
+<li>
+<p><strong>필요 시 설치</strong><br>
+    •  gedit 설치  </p>
+<pre><code>sudo apt install gedit
+</code></pre>
+<p>•  terminator 설치    </p>
+<pre><code>sudo apt install terminator
+</code></pre>
+</li>
+</ol>
 
 
 
