@@ -509,3 +509,11 @@
         margin-left: 2rem;
     }
 }
+
+/* 저작권 경고 문구 */
+.copyright-notice__warning {
+    display: block;
+    font-size: 0.6rem;
+    font-weight: 700;
+    line-height: 1.6;
+}
