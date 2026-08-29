@@ -480,13 +480,14 @@
 .copyright-notice__link {
     flex-shrink: 0;
     font-weight: 600;
+    color: #0066FF;
     text-decoration: none;
 }
 
 .copyright-notice__link:hover {
-    text-decoration: underline;
+    color: #00A8FF !important;
+        text-decoration: underline;
 }
-
 
 /* =========================================================
    모바일 화면
