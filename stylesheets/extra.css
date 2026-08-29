@@ -433,3 +433,79 @@
     margin-left: 33px;
 }
 
+/* =========================================================
+   저작권 보호 안내 Footer
+   ========================================================= */
+
+.copyright-notice {
+    width: 100%;
+    margin-top: 2rem;
+    border-top: 1px solid var(--md-default-fg-color--lightest);
+    background-color: var(--md-default-bg-color);
+}
+
+.copyright-notice__inner {
+    max-width: 61rem;
+    margin: 0 auto;
+    padding: 1rem 0.8rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    font-size: 0.75rem;
+    line-height: 1.6;
+}
+
+.copyright-notice__icon {
+    flex-shrink: 0;
+    font-size: 1rem;
+}
+
+.copyright-notice__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    flex: 1;
+}
+
+.copyright-notice__text strong {
+    font-weight: 700;
+}
+
+.copyright-notice__text span {
+    opacity: 0.8;
+}
+
+.copyright-notice__link {
+    flex-shrink: 0;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.copyright-notice__link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   모바일 화면
+   ========================================================= */
+
+@media screen and (max-width: 768px) {
+
+    .copyright-notice__inner {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+
+    .copyright-notice__text {
+        flex-basis: calc(100% - 2rem);
+    }
+
+    .copyright-notice__link {
+        margin-left: 2rem;
+    }
+}
