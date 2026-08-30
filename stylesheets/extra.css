@@ -518,3 +518,68 @@
     font-weight: 700;
     line-height: 1.6;
 }
+
+/* =========================================================
+   사이트 운영자 및 이용 통계 안내
+   ========================================================= */
+
+.site-info {
+    width: 100%;
+    background-color: var(--md-default-bg-color);
+}
+
+.site-info__inner {
+    max-width: 61rem;
+    margin: 0 auto;
+    padding: 0.2rem 0.8rem 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 0.4rem 0.8rem;
+
+    font-size: 0.65rem;
+    line-height: 1.5;
+
+    color: var(--md-default-fg-color--light);
+}
+
+.site-info__copyright {
+    font-weight: 600;
+}
+
+.site-info__analytics {
+    opacity: 0.75;
+}
+
+.site-info__link {
+    color: #0066FF !important;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.site-info__link:hover {
+    color: #00A8FF !important;
+    text-decoration: underline;
+}
+
+/* =========================================================
+   모바일 화면
+   ========================================================= */
+
+@media screen and (max-width: 768px) {
+
+    .site-info__inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        padding: 0.2rem 1rem 1rem;
+
+        gap: 0.25rem;
+    }
+
+}
+
