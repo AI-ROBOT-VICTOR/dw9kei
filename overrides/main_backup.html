@@ -1,8 +1,5 @@
+```html
 {% extends "base.html" %}
-
-{% block extrahead %}
-  <link rel="icon" type="image/png" href="{{ 'images/robot.png' | url }}">
-{% endblock %}
 
 {% block footer %}
 
@@ -35,6 +32,7 @@
     </div>
   </div>
 
+
   <!-- =========================================================
        운영자 및 사이트 이용 통계 안내
        ========================================================= -->
@@ -54,6 +52,8 @@
     </div>
   </div>
 
+
   {{ super() }}
 
 {% endblock %}
+```
