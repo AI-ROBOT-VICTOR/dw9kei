@@ -901,7 +901,7 @@
 <p><strong>docker run으로 컨테이너 생성 + start</strong>  </p>
 <pre><code>docker run -d --name yolo-detection -w /ros2_ws \
 --network host --gpus all --shm-size=8g \
---device=/dev/video6:/dev/video6 \
+-v /dev/bus/usb:/dev/bus/usb \
 -e DISPLAY=$DISPLAY \
 -e QT_X11_NO_MITSHM=1 \
 -e ROS_DISTRO=jazzy \
